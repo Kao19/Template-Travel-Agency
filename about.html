@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel Website</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style type="text/css">
+      img {
+        display: block; margin-left: auto; margin-right: auto; width: 700px; height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+   <div style = "position:relative; top:2px;">
+    <header>
+      <div>
+        <i class="fas fa-plane"></i>
+        <p>TarouTravel</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="titles">
+      <h1>Travel Website</h1>
+      <p>
+        Welcome Traverler! join us to discover Morocco.
+      </p>
+    </section>
+
+    <br><br>
+
+    <img class="mySlides" src="Aboutimgs/dar-tourkia-3.jpg" >
+    <img class="mySlides" src="Aboutimgs/riad-anma-3.jpg">
+    <img class="mySlides" src="Aboutimgs/domaine-villa-talaa-resort-2.jpg">
+    <img class="mySlides" src="Aboutimgs/domaine-villa-talaa-resort-3.jpg">
+    <img class="mySlides" src="Aboutimgs/domaine-villa-talaa-resort-4.jpg">
+    <img class="mySlides" src="Aboutimgs/riad-le-jasmin-3.jpg">
+    <img class="mySlides" src="Aboutimgs/riad-le-jasmin-2.jpg">
+    <img class="mySlides" src="Aboutimgs/riad-tafilag-2.jpg">
+    <img class="mySlides" src="Aboutimgs/riad-tafilag-3.jpg">
+    <img class="mySlides" src="Aboutimgs/palais-oumensour-2.jpg">
+    <img class="mySlides" src="Aboutimgs/palais-oumensour-3.jpg">
+    <img class="mySlides" src="Aboutimgs/le-jardin-des-epices-2.jpg">
+    <img class="mySlides" src="Aboutimgs/le-jardin-des-epices-3.jfif">
+
+
+    <script type="text/javascript">
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <section>
+      
+      <p style="color: white; margin-left: 10%; margin-right: 10%; font-style: italic; font-family:'Courier New'">  
+        Morocco has a rich history and this can be seen in the architecture of its cities. The Walls of Taroudant are a good example. Join us and discover this Kasbah nicknamed the “Little Marrakech”. <br><br>
+        We offer a wide range of services for holidays.  Supported by a dynamic multilingual team, we can offer you original and quality stays at competitive prices, for which we guarantee a personalised service. <br><br>
+        You always wanted to visit Taroudant with a private driver / guide? You came to the right place. <br><br> 
+      </p>
+
+    </section>
+   </div>
+  </body>
+</html>
